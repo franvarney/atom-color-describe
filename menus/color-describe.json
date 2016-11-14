@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle color-describe",
+        "command": "color-describe:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "color-describe",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "color-describe:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
