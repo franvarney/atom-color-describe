@@ -1,26 +1,11 @@
 {
   "context-menu": {
-    "atom-text-editor": [
-      {
-        "label": "Toggle color-describe",
-        "command": "color-describe:toggle"
-      }
-    ]
+    "atom-text-editor": []
   },
   "menu": [
     {
       "label": "Packages",
-      "submenu": [
-        {
-          "label": "color-describe",
-          "submenu": [
-            {
-              "label": "Toggle",
-              "command": "color-describe:toggle"
-            }
-          ]
-        }
-      ]
+      "submenu": []
     }
   ]
 }

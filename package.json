@@ -2,17 +2,42 @@
   "name": "color-describe",
   "main": "./lib/color-describe",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "Shows a text description when highlighting a valid color (CSS format).",
   "keywords": [],
-  "activationCommands": {
-    "atom-workspace": "color-describe:toggle"
-  },
   "repository": "https://github.com/atom/color-describe",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "lodash.debounce": "4.0.8",
     "tinycolor2": "1.4.1"
+  },
+  "configSchema": {
+    "fileTypes": {
+      "type": "array",
+      "default": [
+        "source.css",
+        "source.less",
+        "source.styl",
+        "source.stylus",
+        "source.sass",
+        "source.scss",
+        "source.css.less",
+        "source.css.styl",
+        "source.css.stylus",
+        "source.css.sass",
+        "source.css.scss"
+      ],
+      "title": "File Types",
+      "description": "These file types will show the color description when highlighting a color."
+    },
+    "timeout": {
+      "type": "integer",
+      "default": 400,
+      "minimum": 50,
+      "title": "Delay",
+      "description": "Number of milliseconds to wait before describing color."
+    }
   }
 }
